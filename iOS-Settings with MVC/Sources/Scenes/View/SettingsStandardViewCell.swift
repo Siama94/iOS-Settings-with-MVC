@@ -13,7 +13,7 @@ class SettingsStandardViewCell: UITableViewCell {
 
     // MARK: - Configuration
 
-    func configureCell(with model: Settings) {
+    func configureCell(with model: ItemsSettings) {
         labelTitle.text = model.title
         iconImageView.image = model.icon
         iconContainer.backgroundColor = model.iconBackgroundColor

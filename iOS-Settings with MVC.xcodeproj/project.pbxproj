@@ -16,6 +16,7 @@
 		5D94DE7E26CEF99E00538DC7 /* SettingsStandardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94DE7D26CEF99E00538DC7 /* SettingsStandardViewCell.swift */; };
 		5D94DE8126CEF9CE00538DC7 /* SettingsLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94DE8026CEF9CE00538DC7 /* SettingsLabelTableViewCell.swift */; };
 		5D94DE8426CEF9F300538DC7 /* SettingsSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94DE8326CEF9F300538DC7 /* SettingsSwitchTableViewCell.swift */; };
+		5D94DE8926CEFACA00538DC7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94DE8826CEFACA00538DC7 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5D94DE7D26CEF99E00538DC7 /* SettingsStandardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStandardViewCell.swift; sourceTree = "<group>"; };
 		5D94DE8026CEF9CE00538DC7 /* SettingsLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelTableViewCell.swift; sourceTree = "<group>"; };
 		5D94DE8326CEF9F300538DC7 /* SettingsSwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		5D94DE8826CEFACA00538DC7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				5D94DE7D26CEF99E00538DC7 /* SettingsStandardViewCell.swift */,
 				5D94DE8026CEF9CE00538DC7 /* SettingsLabelTableViewCell.swift */,
 				5D94DE8326CEF9F300538DC7 /* SettingsSwitchTableViewCell.swift */,
+				5D94DE8826CEFACA00538DC7 /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D94DE8426CEF9F300538DC7 /* SettingsSwitchTableViewCell.swift in Sources */,
+				5D94DE8926CEFACA00538DC7 /* SettingsView.swift in Sources */,
 				5D94DE7626CEF87B00538DC7 /* SettingsModel.swift in Sources */,
 				5D94DE7E26CEF99E00538DC7 /* SettingsStandardViewCell.swift in Sources */,
 				5D94DE7926CEF8D100538DC7 /* ItemsSettings.swift in Sources */,
