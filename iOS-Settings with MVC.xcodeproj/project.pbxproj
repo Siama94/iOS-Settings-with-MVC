@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D94DE5126CEF3B300538DC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94DE5026CEF3B300538DC7 /* AppDelegate.swift */; };
-		5D94DE5326CEF3B300538DC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94DE5226CEF3B300538DC7 /* SceneDelegate.swift */; };
-		5D94DE5526CEF3B300538DC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94DE5426CEF3B300538DC7 /* ViewController.swift */; };
-		5D94DE5826CEF3B300538DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D94DE5626CEF3B300538DC7 /* Main.storyboard */; };
+		5D94DE5526CEF3B300538DC7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D94DE5426CEF3B300538DC7 /* SettingsViewController.swift */; };
 		5D94DE5A26CEF3C300538DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D94DE5926CEF3C300538DC7 /* Assets.xcassets */; };
 		5D94DE5D26CEF3C300538DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D94DE5B26CEF3C300538DC7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		5D94DE4D26CEF3B300538DC7 /* iOS-Settings with MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Settings with MVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D94DE5026CEF3B300538DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D94DE5226CEF3B300538DC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5D94DE5426CEF3B300538DC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5D94DE5726CEF3B300538DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D94DE5426CEF3B300538DC7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5D94DE5926CEF3C300538DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D94DE5C26CEF3C300538DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D94DE5E26CEF3C300538DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +52,69 @@
 		5D94DE4F26CEF3B300538DC7 /* iOS-Settings with MVC */ = {
 			isa = PBXGroup;
 			children = (
-				5D94DE5026CEF3B300538DC7 /* AppDelegate.swift */,
-				5D94DE5226CEF3B300538DC7 /* SceneDelegate.swift */,
-				5D94DE5426CEF3B300538DC7 /* ViewController.swift */,
-				5D94DE5626CEF3B300538DC7 /* Main.storyboard */,
-				5D94DE5926CEF3C300538DC7 /* Assets.xcassets */,
-				5D94DE5B26CEF3C300538DC7 /* LaunchScreen.storyboard */,
-				5D94DE5E26CEF3C300538DC7 /* Info.plist */,
+				5D94DE6A26CEF57B00538DC7 /* Sources */,
+				5D94DE6926CEF54700538DC7 /* Resources */,
 			);
 			path = "iOS-Settings with MVC";
+			sourceTree = "<group>";
+		};
+		5D94DE6926CEF54700538DC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D94DE5B26CEF3C300538DC7 /* LaunchScreen.storyboard */,
+				5D94DE5E26CEF3C300538DC7 /* Info.plist */,
+				5D94DE5926CEF3C300538DC7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5D94DE6A26CEF57B00538DC7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5D94DE6C26CEF59D00538DC7 /* Scenes */,
+				5D94DE6B26CEF58F00538DC7 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5D94DE6B26CEF58F00538DC7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5D94DE5026CEF3B300538DC7 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5D94DE6C26CEF59D00538DC7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5D94DE6D26CEF5C700538DC7 /* Model */,
+				5D94DE6E26CEF5D500538DC7 /* View */,
+				5D94DE6F26CEF5E400538DC7 /* Controller */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5D94DE6D26CEF5C700538DC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D94DE6E26CEF5D500538DC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D94DE6F26CEF5E400538DC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D94DE5426CEF3B300538DC7 /* SettingsViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +176,6 @@
 			files = (
 				5D94DE5D26CEF3C300538DC7 /* LaunchScreen.storyboard in Resources */,
 				5D94DE5A26CEF3C300538DC7 /* Assets.xcassets in Resources */,
-				5D94DE5826CEF3B300538DC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D94DE5526CEF3B300538DC7 /* ViewController.swift in Sources */,
+				5D94DE5526CEF3B300538DC7 /* SettingsViewController.swift in Sources */,
 				5D94DE5126CEF3B300538DC7 /* AppDelegate.swift in Sources */,
-				5D94DE5326CEF3B300538DC7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5D94DE5626CEF3B300538DC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D94DE5726CEF3B300538DC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5D94DE5B26CEF3C300538DC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CT2Z3RU3KS;
-				INFOPLIST_FILE = "iOS-Settings with MVC/Info.plist";
+				INFOPLIST_FILE = "iOS-Settings with MVC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CT2Z3RU3KS;
-				INFOPLIST_FILE = "iOS-Settings with MVC/Info.plist";
+				INFOPLIST_FILE = "iOS-Settings with MVC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
