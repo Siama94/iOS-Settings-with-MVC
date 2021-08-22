@@ -11,7 +11,7 @@ class SettingsViewController: UIViewController {
 
     var model: SettingsModel?
 
-    private var onboardingView: SettingsView? {
+    private var tableView: SettingsView? {
         guard isViewLoaded else { return nil }
         return view as? SettingsView
     }
@@ -35,6 +35,6 @@ class SettingsViewController: UIViewController {
 private extension SettingsViewController {
     func configureView() {
         guard let models = model?.configureCell else { return }
-        onboardingView?.configureView(with: models)
+        tableView?.configureView(with: models)
     }
 }
